@@ -61,47 +61,50 @@ function altc(){
       let tm=Number(tc.max)
       let am=t
       var p=a/t *100;
-      if(tc.value==""){
-            document.querySelector("#altc1").style.display="block"
-      }
-      else {
-            document.querySelector("#altc1").style.display="none";
-      }
-      if(t>tm){
-            document.querySelector("#altc2").style.display="block"
-      }
-      else {
-            document.querySelector("#altc2").style.display="none";
-      }
-      if(t<0){
-            document.querySelector("#altc3").style.display="block"
-      }
-      else {
-            document.querySelector("#altc3").style.display="none";
-      }
-      //ac.max = tc.value;
-      // ac
-      if( ac.value==""){
-            document.querySelector("#alac1").style.display="block"
-      }
-      else {
-            document.querySelector("#alac1").style.display="none";
-           }
-      if( a<0){
-            document.querySelector("#alac2").style.display="block"
-      }
-      else {
-            document.querySelector("#alac2").style.display="none";
-           }
-      if( a>am){
-            document.querySelector("#alac3").style.display="block"
-      }
-      else {
-            document.querySelector("#alac3").style.display="none";
-           }
+      
       if((t>=0) && (t<=tm )& (a>=0) && (a<=t) && (tc.value!="") && (ac.value!="")){
          document.getElementById('inputs').innerHTML=document.getElementById('results').innerHTML;   
          gauge(p/100,pc);
+      }
+      else{
+            if(tc.value==""){
+                  document.querySelector("#altc1").style.display="block"
+            }
+            else {
+                  document.querySelector("#altc1").style.display="none";
+            }
+            if(t>tm){
+                  document.querySelector("#altc2").style.display="block"
+            }
+            else {
+                  document.querySelector("#altc2").style.display="none";
+            }
+            if(t<0){
+                  document.querySelector("#altc3").style.display="block"
+            }
+            else {
+                  document.querySelector("#altc3").style.display="none";
+            }
+            //ac.max = tc.value;
+            // ac
+            if( ac.value==""){
+                  document.querySelector("#alac1").style.display="block"
+            }
+            else {
+                  document.querySelector("#alac1").style.display="none";
+                 }
+            if( a<0){
+                  document.querySelector("#alac2").style.display="block"
+            }
+            else {
+                  document.querySelector("#alac2").style.display="none";
+                 }
+            if( a>am){
+                  document.querySelector("#alac3").style.display="block"
+            }
+            else {
+                  document.querySelector("#alac3").style.display="none";
+                 }
       }
 // classes calculation
     var x,y,d,pt;
