@@ -28,13 +28,42 @@
       </header>
       <!--body -->
       <div id="devap" class="body">
-            <div class="thankimg"> <img src="hands.webp" width="50%">
+            <div class="thankimg"> <img src="hands.webp" width="45%">
             <div class="thanking"><h1> THANK YOU</h1>
-            <p>Our Developers are working on this page soon this page will be functional.</p>
-            <p>we are looking forward for your feedback and suggestions feel free to reach us via email:-<a href="contact.bunkcalsi@gmail.com">contact.bunkcalsi@gmail.com</a></p>
+            <!--<p>Our Developers are working on this page soon this page will be functional.</p>-->
+            <p>we are looking forward for your feedback and suggestions feel free to post here.</p>
             </div>
             </div>
+      <div id="feedback">
+            
+            <div class="ratestars">
+                  <input form="ff" type="radio" name="rate" id="rate-5" value="5">
+                  <label for="rate-5" class="fas fa-star"></label>
+                  <input form="ff" type="radio" name="rate" id="rate-4" value="4">
+                  <label for="rate-4" class="fas fa-star"></label>
+                  <input form="ff" type="radio" name="rate" id="rate-3" value="3" >
+                  <label for="rate-3" class="fas fa-star"></label>
+                  <input form="ff" type="radio" name="rate" id="rate-2" value="2">
+                  <label for="rate-2" class="fas fa-star"></label>
+                  <input form="ff" type="radio" name="rate" id="rate-1" value="1">
+                  <label for="rate-1" class="fas fa-star"></label>
+             <form method="POST" name="feedback-bunkcalsi" id="ff" >
+            <header id="rating"></header>
+            <div class="textfeed">
+                  <div class="ynam">
+                  <textarea name="Name" type="text" placeholder="your name" required maxlength="10"></textarea>
+                  </div>
+                  <div class="textar">
+                  <textarea name="Suggestions" placeholder="Help us to improve!!" required maxlength="150"></textarea>
+                  </div>
+                  <div class="sub-btn">
+                  <button type="submit">send your feedback </button>
+                  </div>
+            </div>
+            </form>
       </div>
+      </div>
+</div>
       <!--footer-->
       <div class="footer">
       <footer>
@@ -48,7 +77,7 @@
                               <div class="col">
                                     <h4>Contact Us</h4>
                                     <ul>
-                                          <li><a href="contact.bunkcalsi@gmail.com">contact.bunkcalsi@gmail.com</a></li>
+                                          <li><a href="mailto:contact.bunkcalsi@gmail.com">contact.bunkcalsi@gmail.com</a></li>
                                     </ul>
                               </div>
                               <div class="col">
@@ -57,7 +86,7 @@
                                           <a href="https://instagram.com/bunkcalsi?igshid=ZDdkNTZiNTM="><img src="instagram.png" width="32px"></a>
                                           <a href="#"><img src="linkedin.png" width="32px"></a>
                                           <a href="#"><img src="discord.png" width="32px"></a>
-                                          <a href="contact.bunkcalsi@gmail.com"><img src="email.png" width="32px"></a>
+                                          <a href="mailto:contact.bunkcalsi@gmail.com"><img src="email.png" width="32px"></a>
                                     </div>
                               </div>
                         </div>
@@ -69,6 +98,18 @@
       </div>
       </div>
       </div>
+      <script>
+      //feedback
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzrmvgOmiGKL9WF1ck6E2iBqbxtkPlYCK7_OAtmM4w074oCuEyyYfELN5Ws3pQgkffs/exec'
+            const form = document.forms['feedback-bunkcalsi']
+            
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                  .then(response => alert("Thank you! your form is submitted successfully." ))
+                  .then(() => {  window.location.reload(); })
+                  .catch(error => console.error('Error!', error.message))
+            })</script>
       <script src="console.js"></script> 
 </body>
 </html>

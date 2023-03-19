@@ -9,6 +9,17 @@ bars.onclick = function() {
     sec.classList.toggle("act");
     fo.classList.toggle("act");
 }
+//feedback
+/*const scriptURL = 'https://script.google.com/macros/s/AKfycbzrmvgOmiGKL9WF1ck6E2iBqbxtkPlYCK7_OAtmM4w074oCuEyyYfELN5Ws3pQgkffs/exec'
+const form = document.forms['feedback-bunkcalsi']
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => alert("Thank you! your form is submitted successfully." ))
+      .then(() => {  window.location.reload(); })
+      .catch(error => console.error('Error!', error.message))
+})*/
 //infopopup
 function togglepopup(){
       document.getElementById("info1").classList.toggle("act2");
@@ -150,6 +161,7 @@ function altc(){
       document.querySelector('#clas').textContent = `BUNKS YOU HAVE : ${y} Classes or ${d.toFixed(0)} days (appox.) `;
       }
 }
+
 
 
 /*errors*/
