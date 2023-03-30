@@ -136,7 +136,7 @@ function altc(){
       let c=2;
       for(y=1;y<c;y++){
          pt=((a)/(t+y))*100;
-         if(pt<(pc*100)){
+         if(pt>(pc*100)){
                c++;
          }
          else{
