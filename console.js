@@ -119,7 +119,7 @@ function altc(){
       }
 // classes calculation
     var x,y,d,pt;
-    if(p<(pc*100)){
+    if(p<=(pc*100)){
          var c=2;
          for(x=1;x<c;x++){
             pt=((a+x)/(t+x))*100;
@@ -156,9 +156,6 @@ function altc(){
       document.querySelector('#cheer').textContent=`VERY CLOSE!!!`;
       document.querySelector('#cheer').style.color="orange";
       document.querySelector('#clas').textContent = `YOU HAVE TO ATTEND MORE : ${x} Classes or ${d.toFixed(0)} days (appox.)`;    
-     }
-     else if(p==(pc*100)){
-        document.querySelector('#clas').textContent = `BUNKS YOU HAVE : ${y} Classes or ${d.toFixed(0)} days (appox.) `;
      }
      else{
       document.querySelector('#clas').textContent = `BUNKS YOU HAVE : ${y} Classes or ${d.toFixed(0)} days (appox.) `;
