@@ -12,7 +12,6 @@ bars.onclick = function() {
 //feedback
 /*const scriptURL = 'https://script.google.com/macros/s/AKfycbzrmvgOmiGKL9WF1ck6E2iBqbxtkPlYCK7_OAtmM4w074oCuEyyYfELN5Ws3pQgkffs/exec'
 const form = document.forms['feedback-bunkcalsi']
-
 form.addEventListener('submit', e => {
   e.preventDefault()
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
@@ -119,19 +118,17 @@ function altc(){
       }
 // classes calculation
     var x,y,d,pt;
-    if(p<=(pc*100)){
+    if(p<(pc*100)){
          let c=2;
          for(x=1;x<c;x++){
             pt=((a+x)/(t+x))*100;
-            if(pt<=(pc*100)){
-                y=0;
+            if(pt<(pc*100)){
                   c++;
             }
             else{
                   c=0;
             }
          }
-        y=0;
         d=x/5+1;
     }
     else{
@@ -192,5 +189,4 @@ if(tc.value && ac.value){
       document.querySelector('.results').style.display="block"
       document.querySelector('.inputs').style.display="none"
 }
-
 })*/
