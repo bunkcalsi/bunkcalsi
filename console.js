@@ -130,7 +130,7 @@ function altc(){
                   c=0;
             }
          }
-        if(pt!=(pc*100){
+        if(p!=pt){
         d=x/5+1;
         }
         else{
