@@ -136,16 +136,16 @@ function altc(){
       let c=2;
       for(y=1;y<c;y++){
          pt=((a)/(t+y))*100;
-         if(pt>(pc*100)){
+         if(pt>=(pc*100)){
                c++;
          }
          else{
                c=0;
          }
       }
+       y=y-2;
       d=y/5+1;
     } 
-    y=y-2;
     //console.log(pc*100-10)
     //results display
     if(p<((pc*100)-10)){
