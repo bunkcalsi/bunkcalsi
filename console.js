@@ -130,6 +130,7 @@ function altc(){
                   c=0;
             }
          }
+        y=0;
         d=x/5+1;
     }
     else{
