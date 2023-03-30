@@ -119,7 +119,7 @@ function altc(){
       }
 // classes calculation
     var x,y,d,pt;
-    if(p<=(pc*100)){
+    if(p<(pc*100)){
          var c=2;
          for(x=1;x<c;x++){
             pt=((a+x)/(t+x))*100;
@@ -130,13 +130,11 @@ function altc(){
                   c=0;
             }
          }
-        if(p!=pt){
         d=x/5+1;
-        }
-        else{
-            x=0;
-            d=0;
-        }
+    }
+    else if(p==(pc*100)){
+        x=0;
+        d=0;
     }
     else{
       var c=2;
