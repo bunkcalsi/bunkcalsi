@@ -133,8 +133,8 @@ function altc(){
         d=x/5+1;
     }
     else if(p==(pc*100)){
-        x=0;
-        d=0;
+        y=0;
+        d=y/5+1;
     }
     else{
       var c=2;
