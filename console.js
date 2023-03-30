@@ -124,6 +124,7 @@ function altc(){
          for(x=1;x<c;x++){
             pt=((a+x)/(t+x))*100;
             if(pt<=(pc*100)){
+                y=0;
                   c++;
             }
             else{
