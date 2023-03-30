@@ -123,7 +123,7 @@ function altc(){
          let c=2;
          for(x=1;x<c;x++){
             pt=((a+x)/(t+x))*100;
-            if(pt<(pc*100)){
+            if(pt<=(pc*100)){
                   c++;
             }
             else{
