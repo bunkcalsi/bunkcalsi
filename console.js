@@ -157,6 +157,9 @@ function altc(){
       document.querySelector('#cheer').style.color="orange";
       document.querySelector('#clas').textContent = `YOU HAVE TO ATTEND MORE : ${x} Classes or ${d.toFixed(0)} days (appox.)`;    
      }
+     else if(p==(pc*100)){
+        document.querySelector('#clas').textContent = `BUNKS YOU HAVE : ${y} Classes or ${d.toFixed(0)} days (appox.) `;
+     }
      else{
       document.querySelector('#clas').textContent = `BUNKS YOU HAVE : ${y} Classes or ${d.toFixed(0)} days (appox.) `;
       }
