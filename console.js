@@ -72,7 +72,7 @@ function altc(){
       let am=t
       var p=a/t *100;
       
-      if((t>=0) && (t<=tm )& (a>=0) && (a<=t) && (tc.value!="") && (ac.value!="")){
+      if((t>=0) && (t<=tm ) && (a>=0) && (a<=t) && (tc.value!="") && (ac.value!="")){
          document.getElementById('inputs').innerHTML=document.getElementById('results').innerHTML;   
          gauge(p/100,pc);
       }
